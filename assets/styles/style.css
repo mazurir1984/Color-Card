@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: inline-block;
+    min-width: 30%;
+    border-radius: 5px;
+    text-align: left;
+    padding: 45px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.weekly-sales {
+    background-image: linear-gradient(to right, rgb(243, 168, 107), rgb(238, 110, 212));
+}
+
+.weekly-orders {
+    background-image: linear-gradient(to right, rgb(165, 196, 231), rgb(11, 122, 202));
+}
+
+.visitors-online {
+    background-image: linear-gradient(to right, rgb(151, 230, 209), rgb(19, 235, 221));
+}
+
+.name-card {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.cost {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.interest-rate {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.demonstration {
+    position: absolute;
+    right: 45px;
+    width: 32px;
+    height: 32px;
+}
+
+.card::after,
+.card::before {
+    content: "";
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    display: inline-block;
+    opacity: 0.18;
+}
+
+.card::before {
+    top: -15px;
+    right: -100px;
+    width: 240px;
+    height: 240px;
+}
+
+.card::after {
+    top: 150px;
+    right: -40px;
+    width: 300px;
+    height: 300px;
+}
